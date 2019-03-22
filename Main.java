@@ -29,10 +29,9 @@ public class Main {
 		for (int i = 0; i < g; i++) {
 			if (g < 1)
 				break;
-			int a = dq.getFirst();
+			int a = dq.removeFirst();
 			dq.addLast(a);
 			dq.addLast(a);
-			dq.removeFirst();
 		}
 		System.out.println(dq);
 	}
